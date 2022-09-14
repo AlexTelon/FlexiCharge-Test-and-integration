@@ -1,35 +1,34 @@
 import psycopg2
 
+def test_createDB_Table():
+    connection = connect()
+    cursor = createCursor(connection)
+    if(createTables(cursor)):
+        connection.commit()
+        print('Table was successfully created!')
+    else:
+        print('An error exception was raised!')
+
+    closeConnection(connection)
+
+def createCursor(connection):
+    #creates a cursor used to execute SQL commands in the database
+    return connection.cursor()
 
 def connect():
     print('Connecting to the PostgreSQL database...')
+    connection = None
 
-# Connect to database
-    connection = psycopg2.connect(
-        "dbname=example_database user=postgres password=abc123")
-    cursor = connection.cursor()
-
-# Print Database version
-    print('PostgreSQL database version:')
-    cursor.execute('SELECT version()')
-    db_version = cursor.fetchone()
-    print(db_version)
-
-# Create tables
-    print('Attempt to create Tables \n')
+    # Connect to the database
     try:
-        cursor.execute('''CREATE TABLE chargerTable (
-            chargePointID SERIAL PRIMARY KEY,
-            chargerName VARCHAR(20) UNIQUE NOT NULL,
-            created_on TIMESTAMP NOT NULL,
-            last_login TIMESTAMP
-            )''')
+        connection = psycopg2.connect(
+            "dbname=example_database user=postgres password=abc123")
     except:
-        print('An error exception was raised!')
+        print('Connection Failed')
     else:
-        print('The table was created successfully!')
-
-    return connection
+        print('Connection to Database Successful!')
+    finally:
+        return connection
 
 
 def closeConnection(connection):
@@ -37,20 +36,19 @@ def closeConnection(connection):
     connection.close()
 
 
-def createTables(crsr):
+def createTables(cursor):
+    # Create a table in the database
     print('Attempt to create Tables \n')
     try:
-        crsr.execute('''CREATE TABLE [IF NOT EXISTS] chargerTable (
-            chargePointID SERIAL(10) PRIMARY KEY, 
+        cursor.execute('''CREATE TABLE chargerTable5 (
+            chargePointID SERIAL PRIMARY KEY,
             chargerName VARCHAR(20) UNIQUE NOT NULL,
             created_on TIMESTAMP NOT NULL,
-            last_login TIMESTAMP 
-            NOT NULL);''')
+            last_login TIMESTAMP
+            );''')
     except:
-        print('An error exception was raised!')
+        return False
     else:
-        print('The table was created successfully!')
+        return True
 
-
-conn = connect()
-closeConnection(conn)
+test_createDB_Table()
