@@ -12,5 +12,4 @@ class TestApi:
         assert r.encoding == "utf-8", "Encoding is not utf-8"
         
         
-        
     
