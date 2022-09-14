@@ -3,7 +3,9 @@ import psycopg2
 def test_createDB_Table():
     connection = connect()
     cursor = createCursor(connection)
+    #check if table creation threw an exception
     if(createTables(cursor)):
+        #if successful commit the created table to the database
         connection.commit()
         print('Table was successfully created!')
     else:
@@ -37,7 +39,7 @@ def closeConnection(connection):
 
 
 def createTables(cursor):
-    # Create a table in the database
+    # Create a table structure
     print('Attempt to create Tables \n')
     try:
         cursor.execute('''CREATE TABLE chargerTable5 (
