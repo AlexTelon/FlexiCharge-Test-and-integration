@@ -38,7 +38,7 @@
 FlexiCharge is an upcoming challenger in the electrical car charging industry.
 Our vision is to provide the most flexible charging experience in the market.
 
-The test and integration teams work towards automating tests for the rest of the project thus ensuring a good quality product.
+The test and integration team work towards automating tests for the rest of the project thus ensuring a good quality product.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +166,7 @@ Don't forget to give the project a star! Thanks again!
 ## Contact
 
 - Christoffer - 9914kach@gmail.com
-- Jesper - email@example.com
+- Jesper - peje20le@student.ju.se
 - Albin - email@example.com
 - Oskar - email@example.com
 - Iris - email@example.com
