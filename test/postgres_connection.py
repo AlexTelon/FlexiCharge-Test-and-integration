@@ -15,6 +15,7 @@ class psql_connection:
             return cursor
         finally:
             assert cursor != None
+
         
 
     def connect():
@@ -24,10 +25,16 @@ class psql_connection:
         # Connect to the database
         try:
             connection = psycopg2.connect(
-                "dbname=example_database user=postgres password=abc123")    
+                database="postgres",
+                user='postgres',
+                password='abc123',
+                host='127.0.0.1',
+                port='5432')    
         except:
             pytest.fail('Connection Failed') 
         else:
+            #Automatically commit data to the database
+            connection.autocommit = True
             print('Connection to Database Successful!')
             return connection
         finally:
@@ -42,4 +49,3 @@ class psql_connection:
             connection.close()
         except:
             pytest.fail('Connection could not be closed. Did connection succeed?')
-            

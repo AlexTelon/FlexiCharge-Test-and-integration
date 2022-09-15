@@ -1,47 +1,52 @@
-import psycopg2
+from symbol import try_stmt
+import pytest
+from postgres_connection import psql_connection
 
-def test_createDB_Table():
-    connection = connect()
-    cursor = createCursor(connection)
-    #check if table creation threw an exception
-    if(createTables(cursor)):
-        #if successful commit the created table to the database
-        connection.commit()
-        print('Table was successfully created!')
-    else:
-        print('An error exception was raised!')
+def test_create_Table():
+    #Establsih connection and create a cursor to execute commands in the database
+    connection = psql_connection.connect()
+    cursor = psql_connection.createCursor(connection)
 
-    closeConnection(connection)
+    #Attempt to create a table
+    createTables(cursor,connection)
 
-def createCursor(connection):
-    #creates a cursor used to execute SQL commands in the database
-    return connection.cursor()
 
-def connect():
-    print('Connecting to the PostgreSQL database...')
-    connection = None
+    psql_connection.closeConnection(connection)
 
-    # Connect to the database
+
+def test_create_database():
+    connection = psql_connection.connect()
+    cursor = psql_connection.createCursor(connection)
+
+    #Attempt to create a table
+    createDataBase(cursor,connection)
+
+
+    psql_connection.closeConnection(connection)
+
+
+def createDataBase(cursor,connection):
+    print('Attempt to create Database \n')
     try:
-        connection = psycopg2.connect(
-            "dbname=example_database user=postgres password=abc123")
+            # Create a table structure
+        cursor.execute('CREATE DATABASE testing_database2')
     except:
-        print('Connection Failed')
+        pytest.fail('An error exception was raised! Is the Database already created?')
     else:
-        print('Connection to Database Successful!')
-    finally:
-        return connection
+        #if successful created, commit the table to the database
+        print('Database was successfully created!')
+        connection.commit()
+
+    
 
 
-def closeConnection(connection):
-    # Close database connection
-    connection.close()
 
 
-def createTables(cursor):
-    # Create a table structure
+def createTables(cursor,connection):
+   
     print('Attempt to create Tables \n')
     try:
+         # Create a table structure
         cursor.execute('''CREATE TABLE chargerTable5 (
             chargePointID SERIAL PRIMARY KEY,
             chargerName VARCHAR(20) UNIQUE NOT NULL,
@@ -49,8 +54,10 @@ def createTables(cursor):
             last_login TIMESTAMP
             );''')
     except:
-        return False
+        pytest.fail('An error exception was raised! Is the table already created?')
     else:
-        return True
+        #if successful created, commit the table to the database
+        print('Table was successfully created!')
+        connection.commit()
 
-test_createDB_Table()
+        

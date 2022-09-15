@@ -1,7 +1,16 @@
+<<<<<<< Updated upstream
 {
     "python.testing.pytestArgs": [
         "test"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
+=======
+{
+    "python.testing.pytestArgs": [
+        "test"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+>>>>>>> Stashed changes
 }
