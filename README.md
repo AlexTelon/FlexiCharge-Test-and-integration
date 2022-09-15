@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 
 -->
-[![Contributors]][contributors-url]
+[Contributors][contributors-url]
 
 
 
