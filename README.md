@@ -1,7 +1,6 @@
 
 <a name="readme-top"></a>
 
--->
 [Contributors][contributors-url]
 
 
@@ -39,7 +38,7 @@
 FlexiCharge is an upcoming challenger in the electrical car charging industry.
 Our vision is to provide the most flexible charging experience in the market.
 
-The test and integration teams work towards automating test for the rest of the project thus ensuring a good quality product.
+The test and integration teams work towards automating tests for the rest of the project thus ensuring a good quality product.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,7 +68,7 @@ The tests are built using Python and deployed through the github actions pipelin
 <!-- GETTING STARTED -->
 ## Getting Started
 
-TODO!
+TODO
 
 
 ### Prerequisites
@@ -121,6 +120,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
+[x] Test connectivity to rest API.
+[x] Create pipeline using github actions for the forked version of backend repository.
+[ ] Implement the working pipeline in the backend repository. 
 
 <!--
 - [x] Add Changelog
