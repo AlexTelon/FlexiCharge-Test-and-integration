@@ -47,10 +47,11 @@ The test and integration teams work towards automating test for the rest of the 
 
 ### Built With
 
+<!--
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 The tests are built using Python and deployed through the github actions pipeline on each individual team repository.
-<!--
+
   [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
