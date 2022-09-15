@@ -165,11 +165,11 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Christoffer - 9914kach@gmail.com
-Jesper - email@example.com
-Albin - email@example.com
-Oskar - email@example.com
-Iris - email@example.com
+- Christoffer - 9914kach@gmail.com
+- Jesper - email@example.com
+- Albin - email@example.com
+- Oskar - email@example.com
+- Iris - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/knowitrickard)
 
