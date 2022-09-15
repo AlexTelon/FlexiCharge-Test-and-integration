@@ -73,6 +73,8 @@ TODO
 
 ### Prerequisites
 
+
+
 <!--This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
@@ -120,9 +122,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-[x] Test connectivity to rest API.
-[x] Create pipeline using github actions for the forked version of backend repository.
-[ ] Implement the working pipeline in the backend repository. 
+- [x] Test connectivity to rest API.
+- [x] Create pipeline using github actions for the forked version of backend repository.
+- [ ] Implement the working pipeline in the backend repository. 
 
 <!--
 - [x] Add Changelog
