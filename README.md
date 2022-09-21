@@ -167,7 +167,7 @@ Don't forget to give the project a star! Thanks again!
 
 - Christoffer - 9914kach@gmail.com
 - Jesper - peje20le@student.ju.se
-- Albin - email@example.com
+- Albin - albin.wiklund11@gmail.com
 - Oskar - email@example.com
 - Iris - email@example.com
 
