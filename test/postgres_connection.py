@@ -32,7 +32,6 @@ class psql_connection:
             pytest.fail('Connection Failed')
         else:
             # Automatically commit data to the database
-            connection.autocommit = True
             print('Connection to Database Successful!')
             return connection
         finally:

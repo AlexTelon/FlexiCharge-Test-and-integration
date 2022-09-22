@@ -5,12 +5,12 @@ from postgres_connection import psql_connection
 
 
 def test_create_database():
-    connection = psql_connection.connect("example_database")
+    connection = psql_connection.connect("postgres")
+    connection.autocommit = True
     cursor = psql_connection.createCursor(connection)
 
     # Attempt to create a table
     createDataBase(cursor, connection)
-
     psql_connection.closeConnection(connection)
 
 
@@ -20,7 +20,7 @@ def test_create_Table():
     cursor = psql_connection.createCursor(connection)
 
     # Attempt to create a table
-    createTables(cursor, connection)
+    createTable(cursor, connection)
 
     psql_connection.closeConnection(connection)
 
@@ -29,11 +29,16 @@ def test_insert_to_table():
     # Establsih connection and create a cursor to execute commands in the database
     connection = psql_connection.connect("example_database")
     cursor = psql_connection.createCursor(connection)
-    insertQuery = '''INSERT INTO 
-        public."ChargePoints"(name, location, price, klarnaReservationAmount) 
-        VALUES("Nässjö Centralstation",{57.652328901782795,14.694810832097543},123.00,500);
-    '''
-    cursor.execute(insertQuery)
+    chargePointIDs=20,24,25,27
+    locationNames = 'Nässjö Centralstation', 'Coop, Forserum', 'Airport Parking, Jönköping', 'Testotesto'
+    locationCoordinates = {57.652328901782795,14.694810832097543}, {57.70022044183724,14.475150415104222}, {57.749812214261034,14.070100435207065}, {52.77771,14.16301}
+    prices = 123.00, 7500.00, 100000.00, 3000.00
+    klarnaReservationAmounts = 500, 500, 5000,  2000
+    chargePointsTable = 'public."ChargePoints"(name, location[0], location[1], price, klarnaReservationAmount)'
+    sqlQuery = '''INSERT INTO public."ChargePoints"("chargePointID",name, location[0], location[1], price, "klarnaReservationAmount") 
+    VALUES (20,'Nässjö Centralstation', 57.652328901782795, 14.694810832097543, 123.00, 500)'''
+    cursor.execute(sqlQuery)
+    connection.commit()
     psql_connection.closeConnection(connection)
 
 
@@ -51,13 +56,13 @@ def createDataBase(cursor, connection):
         connection.commit()
 
 
-def createTables(cursor, connection):
+def createTable(cursor, connection):
     chargePoints_Table = '''CREATE TABLE IF NOT EXISTS public."ChargePoints" (
-        ChargePointID SERIAL PRIMARY KEY NOT NULL,
+        "chargePointID" SERIAL PRIMARY KEY NOT NULL,
         name VARCHAR(255) NOT NULL,
-        location DOUBLE PRECISION NOT NULL,
+        location DOUBLE PRECISION[] NOT NULL,
         price NUMERIC(10,2) NOT NULL,
-        klarnaReservationAmount INTEGER NOT NULL
+        "klarnaReservationAmount" INTEGER NOT NULL
     );'''
     cursor.execute(chargePoints_Table)
     print('Attempt to create Tables \n')
