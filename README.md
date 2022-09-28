@@ -169,7 +169,7 @@ Don't forget to give the project a star! Thanks again!
 - Jesper - peje20le@student.ju.se
 - Albin - albin.wiklund11@gmail.com
 - Oskar - email@example.com
-- Iris - email@example.com
+- Iris - irisxinran@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/knowitrickard)
 
