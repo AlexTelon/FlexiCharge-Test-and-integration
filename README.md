@@ -73,7 +73,9 @@ TODO
 
 ### Prerequisites
 
-
+- Docker
+- Python
+- Pytest
 
 <!--This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -82,10 +84,16 @@ TODO
   ```
 -->
 ### Installation
+- Run the backend application, same instruction can be found at https://github.com/knowitrickard/FlexiCharge-Backend/blob/main/README.md
+1. Get the secrets for the .env file variables. The variables can be found in the .env.example file
+2. move into the root directory /FlexiCharge-Backend
+3. start the program with ```docker-compose up```
+- You should now be able to run the tests from the ```/test``` directory 
+1. By using ```python pytest /test_*.py``` 
+
 
 <!--_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
