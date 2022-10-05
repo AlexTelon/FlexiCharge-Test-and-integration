@@ -86,7 +86,7 @@ TODO
 ### Installation
 - Run the backend application, same instruction can be found at https://github.com/knowitrickard/FlexiCharge-Backend/blob/main/README.md
 1. Get the secrets for the .env file variables. The variables can be found in the .env.example file
-2. move into the root directory /FlexiCharge-Backend
+2. move into the root directory ```/FlexiCharge-Backend```
 3. start the program with ```docker-compose up```
 - You should now be able to run the tests from the ```/test``` directory 
 1. By using ```python pytest /test_*.py``` 
