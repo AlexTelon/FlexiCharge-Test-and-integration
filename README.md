@@ -67,8 +67,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-TODO
-
 
 ### Prerequisites
 
