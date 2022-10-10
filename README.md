@@ -45,11 +45,11 @@ The test and integration team work towards automating tests for the rest of the 
 
 
 ### Built With
+The tests are built using Python and PyTest which are deployed through the github actions pipeline on each individual team repository.
+
 
 <!--
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-The tests are built using Python and deployed through the github actions pipeline on each individual team repository.
 
   [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
@@ -58,7 +58,6 @@ The tests are built using Python and deployed through the github actions pipelin
 * [![Svelte][Svelte.dev]][Svelte-url]
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -73,9 +72,13 @@ TODO
 
 ### Prerequisites
 
-- Docker
-- Python
-- Pytest
+- <a href="https://www.docker.com/">Docker</a>
+
+- <a href="https://www.python.org/">Python</a>
+- <a href="https://docs.pytest.org">PyTests</a>
+- <a href="https://pypi.org/project/requests/">Requests</a>
+- <a href="https://github.com/knowitrickard/FlexiCharge-Backend">FlexiCharge Backend</a>
+
 
 <!--This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -179,7 +182,9 @@ Don't forget to give the project a star! Thanks again!
 - Oskar - Oskar.s.rundberg@gmail.com
 - Iris - irisxinran@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/knowitrickard)
+Project Link: [https://github.com/users/knowitrickard/projects/2]
+
+All FlexiCharge Repositories: [https://github.com/knowitrickard?tab=repositories]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
