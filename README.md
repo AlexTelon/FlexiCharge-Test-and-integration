@@ -46,6 +46,7 @@ The test and integration team work towards automating tests for the rest of the 
 
 ### Built With
 The tests are built using Python and PyTest which are deployed through the github actions pipeline on each individual team repository.
+The API is accessed with the help of the python module requests
 
 
 <!--
