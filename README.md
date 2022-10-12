@@ -139,7 +139,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [x] Run the workflow on a branch in the backend repo.
     - [x] Make a <a href="https://github.com/knowitrickard/FlexiCharge-Backend/pull/163">Pull Request</a>
     - [ ] Merge branch into main  
-- [ ] Add OCPP tests to the workflow
+- [ ] Use the OCPP endpoints to test
     - [x] Test manually on local app 
     - [ ] Test in branch on backend repo workflow
     - [ ] Make a pull request
