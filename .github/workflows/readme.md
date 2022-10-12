@@ -35,3 +35,9 @@ for example we currently only run the backend tests since the others are not yet
   - These variables are set in our workflow and a .env file is created by the action: <a href="https://github.com/marketplace/actions/create-env-file">Create .env File</a>
   - For example this line ``` #envkey_ADMIN_POOL_SECRET: ${{ secrets.ADMIN_POOL_SECRET }} ``` creates the key: ADMIN_POOL_SECRET with the value stored in the the respective secret.
 
+### host.docker.internal:host-gateway
+- inside our branch in the backend repo we have added this line to the ```docker-compose.yml ``` file
+- ``` 
+    extra_hosts:
+        - "host.docker.internal:host-gateway"
+- This line adds the ability to understand that localhost calls should refer to the runners localhost. Without this specified the tests in the workflow will be unable to connect to the local backend app.
