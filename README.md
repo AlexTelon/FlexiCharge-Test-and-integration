@@ -136,18 +136,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [x] Test connectivity to rest API.
 - [x] Create pipeline using github actions for the forked version of backend repository.
 - [ ] Implement the working pipeline in the backend repository. 
-
-<!--
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
--->
+    - [x] Run the workflow on a branch in the backend repo.
+    - [x] Make a <a href="https://github.com/knowitrickard/FlexiCharge-Backend/pull/163">Pull Request</a>
+    - [ ] Merge branch into main  
+- [ ] Add OCPP tests to the workflow
+    - [x] Test manually on local app 
+    - [ ] Test in branch on backend repo workflow
+    - [ ] Make a pull request
+    - [ ] Merge branch into main
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
