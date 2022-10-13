@@ -46,11 +46,15 @@ The types of tests that the Test & integration team is to perform are primarily 
 
 ### Team Role
 
-The test & integration team role is to make sure the flexicharge system is tested to work and that it functions. As well that the system works as intended. 
+The test & integration team role is to make sure the flexicharge system is tested to work and that it functions. 
 
 ### Other Teams Requests on team
 
-Make sure to be in sync with the other teams so that new functionality can be tested at the earliest possible time. The team are also to check the function of the entire business ready system
+Make sure to be in sync with the other teams so that new functionality can be tested at the earliest possible time. 
+
+The team are also to check the function of the entire business ready system. 
+
+The test team should perform user tests of the project. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
