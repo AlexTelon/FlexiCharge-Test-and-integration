@@ -9,6 +9,13 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
+      <a href="#about-the-team">About The Team</a>
+      <ul>
+        <li><a href="#team-role">Team Role</a></li>
+        <li><a href="#other-teams-requests-on-team">Other Teams Requests on team</a></li>
+      </ul>
+    </li>
+    <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
@@ -30,6 +37,23 @@
   </ol>
 </details>
 
+<!-- ABOUT THE TEAM -->
+## About The Team (wip)
+
+The Focus of the Test & integration team is to help create an Automated test suite for the different repositories of the Flexicharge project and assist in the construction of regression tests. 
+
+The types of tests that the Test & integration team is to perform are primarily integration test and E2E tests but also assist in the creation of regression tests. Unit tests are at the discretion of the different teams not part of Test & integration. 
+
+### Team Role
+
+The test & integration team role is to make sure the flexicharge system is tested to work and that it functions. As well that the system works as intended. 
+
+### Other Teams Requests on team
+
+Make sure to be in sync with the other teams so that new functionality can be tested at the earliest possible time. The team are also to check the function of the entire business ready system
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 <!-- ABOUT THE PROJECT -->
@@ -41,17 +65,6 @@ Our vision is to provide the most flexible charging experience in the market.
 The test and integration team work towards automating tests for the rest of the project thus ensuring a good quality product.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ABOUT THE TEAM -->
-## About The Team
-
-The Focus of the Test & integration team is to help create an Automated test suite for the different repositories of the Flexicharge project and assist in the construction of regression tests. 
-
-The types of tests that the Test & integration team is to perform are primarily integration test and E2E tests but also assist in the creation of regression tests. Unit tests are at the discretion of the different teams not part of Test & integration. 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ### Built With
 The tests are built using Python and PyTest which are deployed through the github actions pipeline on each individual team repository.
@@ -185,7 +198,7 @@ Don't forget to give the project a star! Thanks again!
 - Christoffer - 9914kach@gmail.com
 - Jesper - peje20le@student.ju.se
 - Albin - albin.wiklund11@gmail.com
-- Oskar - Oskar.s.rundberg@gmail.com
+- Oskar - oskar.s.rundberg@gmail.com
 - Iris - irisxinran@gmail.com
 
 Project Link: [https://github.com/users/knowitrickard/projects/2]
