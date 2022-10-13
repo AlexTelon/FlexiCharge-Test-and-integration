@@ -40,13 +40,13 @@
 <!-- ABOUT THE TEAM -->
 ## About The Team (wip)
 
-The Focus of the Test & integration team is to help create an Automated test suite for the different repositories of the Flexicharge project and assist in the construction of regression tests. 
+The Focus of the Test & integration team is to help create an Automated test suite for the different repositories of the FlexiCharge project and assist in the construction of regression tests. 
 
 The types of tests that the Test & integration team is to perform are primarily integration test and E2E tests but also assist in the creation of regression tests. Unit tests are at the discretion of the different teams not part of Test & integration. 
 
 ### Team Role
 
-The test & integration team role is to make sure the flexicharge system is tested to work and that it functions. 
+The test & integration team role is to make sure the FlexiCharge system is tested to work and that it functions. 
 
 ### Other Teams Requests on team
 
