@@ -19,7 +19,10 @@ for example we currently only run the backend tests since the others are not yet
     - name: Run PyTest
       run: python -m pytest ./test/backend_tests --junit-xml=report.xml ```
  
- - In order to run new tests you can either add additional tasks similar to the one above or use the pipe functionality to run multiple calls in one task
+ ### In order to run new tests you can either:
+ - Add additional tasks similar to the one above. 
+ - Add additional tests in the file already run.
+ - Use the pipe functionality to run multiple calls in one task, see below.
  - ```
     # Executes the tests in /backend_tests & /user_tests folders
     - name: Run PyTest
