@@ -30,14 +30,7 @@
   </ol>
 </details>
 
-<!-- ABOUT THE TEAM -->
-## About The Team
 
-The Focus of the Test & integration team is to help create an Automated test suite for the different repositories of the Flexicharge project and assist in the construction of regression tests. 
-
-The types of tests that the Test & integration team is to perform are primarily integration test and E2E tests but also assist in the creation of regression tests. Unit tests are at the discretion of the different teams not part of Test & integration. 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -46,6 +39,15 @@ FlexiCharge is an upcoming challenger in the electrical car charging industry.
 Our vision is to provide the most flexible charging experience in the market.
 
 The test and integration team work towards automating tests for the rest of the project thus ensuring a good quality product.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ABOUT THE TEAM -->
+## About The Team
+
+The Focus of the Test & integration team is to help create an Automated test suite for the different repositories of the Flexicharge project and assist in the construction of regression tests. 
+
+The types of tests that the Test & integration team is to perform are primarily integration test and E2E tests but also assist in the creation of regression tests. Unit tests are at the discretion of the different teams not part of Test & integration. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
