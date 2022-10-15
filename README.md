@@ -38,7 +38,7 @@
 </details>
 
 <!-- ABOUT THE TEAM -->
-## About The Team (wip)
+## About The Team
 
 The Focus of the Test & integration team is to help create an Automated test suite for the different repositories of the FlexiCharge project and assist in the construction of regression tests. 
 
