@@ -50,7 +50,7 @@ The Test & Integration team's role is to make sure all the FlexiCharge system pa
 
 ### Other Teams' expectations on the Test & Integration team
 
-- We should stay in sync with the other teams to ensure new functionality is testes ASAP.
+- We should stay in sync with the other teams to ensure new functionality gets tested ASAP.
 
 - We do not enter another teams domain, their codebase, without their acknowlegement.
 
