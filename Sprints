@@ -1,0 +1,28 @@
+Sprint 1
+
+Android – Talal Ghalioun
+Keep working on GitHub actions, write test for new written code, update some packages.
+
+My-pages – victor Alander
+look at the code that already exists, test new code from developers, update some packages.
+
+Charger-charger – Oscar Stigeberg Rundberg
+Investigate and see which tests have been made, test new code form developers.
+
+X-platform – Jesper Lundgren
+Looking into starting iOS, getting the system to run, take care of automated tests, checking last year’s code.
+
+Admin – Viktor Johansson
+Test last years code, get logins from backend so real data can be tested, fix some packages.
+
+HTTP – Viktor Verschelde
+Work on authentication, set up github actions, test last year’s code.
+
+Database – Luca Boel
+Implement the new database, fix invoices.
+
+BMS – David Tey
+Be able to communicate.
+
+OCPP – John Wennerberg
+Refactor the test code, test last year’s code.
